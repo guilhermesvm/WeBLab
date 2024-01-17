@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercício 3 </title>
+</head>
+
+<body>
+<h1> Manipulação de Dados e Horários </h1>
+<button onclick="inicio()">Clique para Começar</button>
+<section id="resultado">
+    <p></p>
+</section>
+<script>
+    function inicio() {
+        let anoNascimento = window.prompt('Informe o seu ano de nascimento ')
+        let res = document.querySelector('section#resultado')
+        const d = new Date();
+        const days = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+
+        diaSemana = days[d.getDay()];
+        hh = dataFormatada = new Date().toLocaleDateString();
+        hh = d.getHours();
+        mm = d.getMinutes();
+        ss = d.getSeconds();
+
+        let ano = d.getFullYear();
+
+        let idade = ano - anoNascimento;
+
+        res.innerHTML = `<p>${diaSemana} - ${dataFormatada} - ${hh}:${mm}:${ss} </p>`;
+        res.innerHTML = res.innerHTML + `<p>Quem nasceu em ${anoNascimento} vai completar <strong>${idade}</strong> anos em ${ano}</p>`;        
+}
+</script>
+</body>
+</html>

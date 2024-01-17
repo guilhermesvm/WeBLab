@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta charset="utf-8"/>
+<BODY>
+   <form action="valida.php" method="POST">
+       Informe o nome*: <input name="caixa1" type="text" size="20">       
+       </br> </br>
+       
+       As disciplinas que está cursando, são de qual semestre?:</br>
+       <input type="checkbox" name="numeros[]" value="1"> I </br>
+       <input type="checkbox" name="numeros[]" value="2"> II </br>
+       <input type="checkbox" name="numeros[]" value="3"> III </br>
+       <input type="checkbox" name="numeros[]" value="4"> IV </br>
+                                 </br>       
+        Quais livros deseja comprar?       </br>
+        Obs: segure "CTRL" para selecionar mais de um.       </br>
+        <select name="livros[]" multiple>
+         <option value="Bíblia do PHP">Bíblia do PHP</option>
+         <option value="PHP Professional">PHP Professional</option>
+         <option value="Iniciando em PHP">Iniciando em PHP</option>
+         <option value="Novidades do PHP">Novas do PHP </option>
+        </select>        </br> </br> 
+             
+       <input  type="submit" value="Enviar" />   
+    
+    </form>
+
+</BODY>
+</HTML>

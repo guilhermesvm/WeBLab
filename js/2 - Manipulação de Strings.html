@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercício 2 </title>
+</head>
+
+<body>
+<h1> Exercício 2</h1>
+<button onclick="inicio()">Clique para Calcular a sua Média</button>
+<section id="resultado">
+    <p></p>
+</section>
+
+<script>
+    function inicio(){
+        let str = window.prompt("Informe a String inicial");
+        let res = document.querySelector('section#resultado');
+
+        resposta = str.length;
+        res.innerHTML = `<p>Tamanho da String [${str}] é: ${resposta}</p>`;
+
+        resposta = str.substring(0,5);
+        res.innerHTML = res.innerHTML + `<p>Substring de [${str}] entre 0 e 5: ${resposta}</p>`;
+
+        resposta = str.replace('X', '-');
+        res.innerHTML = res.innerHTML + `<p>Original [${str}] Substituida: ${resposta}</p>`;
+
+        resposta = str.replace(/X/g, '-');
+        res.innerHTML = res.innerHTML + `<p>Original [${str}] Substituida com regex: ${resposta}</p>`;
+
+        resposta = str.toUpperCase();
+        res.innerHTML = res.innerHTML + `<p>Original [${str}] Maiúsculas: ${resposta}</p>`;
+
+        resposta = str.toLowerCase();
+        res.innerHTML = res.innerHTML + `<p>Original [${str}] Minúsculas: ${resposta}</p>`;
+        
+        caracteres = window.prompt("Informe caracteres para concatenar");
+        resposta = str.concat(str, caracteres);
+        res.innerHTML = res.innerHTML + `<p>Original [${str}] Concatenada: ${resposta}</p>`;
+        
+        resposta = str.trim();
+        res.innerHTML = res.innerHTML + `<p>Original [${str}] Sem espaços brancos: ${resposta}</p>`;
+
+        resposta = caracteres + str + caracteres;
+        res.innerHTML = res.innerHTML + `<p>Original [${str}] Concatenada: ${resposta}</p>`;
+
+        posicao = Number(window.prompt("Informe posição"));
+        resposta = str.charAt(posicao);
+        res.innerHTML = res.innerHTML + `<p>Caractere nas posicao [${posicao}]: ${resposta}</p>`;
+
+        resposta = str.charCodeAt(posicao);
+        res.innerHTML = res.innerHTML + `<p>Caractere UNICODE posicao [${posicao}]: ${resposta}</p>`;
+}
+</script>
+</body>
+</html>

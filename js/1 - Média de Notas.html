@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="inicio()">Clique para iniciar</button>
+
+<script>
+function inicio(){
+	let nome = window.prompt("Qual o nome do aluno?");
+	let nota1 = Number(window.prompt("Informe a nota 1 do aluno."));
+	let nota2 = Number(window.prompt("Informe a nota 2 do aluno."));
+
+	let media = (nota1 + nota2) /2;
+
+	window.alert(`O aluno ${nome} obteve média ${media}`);
+}
+</script>
+</body>
+</html>

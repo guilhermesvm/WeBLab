@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Document</title>
+<script>
+    function nameover() {
+    document.getElementById("texto").innerHTML = "Texto Modificado!"
+    }
+
+    function nameout(){
+    document.getElementById("texto").innerHTML = "Texto Modificado novamente"    
+    }
+</script>
+</head>
+
+<body>
+<h1 id="texto" onmouseover="nameover()" onmouseout="nameout()">Movimente o mouse sobre este texto</h1> 
+</body>
+</html>

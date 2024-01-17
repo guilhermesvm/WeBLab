@@ -1,0 +1,17 @@
+thead {
+  background-color: #001499; 
+  color:#FFFFFF;
+}
+tr {
+  font-weight: bold;
+  text-align: center;
+} 
+.leftcol {
+  text-align:  left;
+} 
+.rightcol {
+  text-align:  right;
+} 
+.botton{
+  background-color: #95979e;
+}

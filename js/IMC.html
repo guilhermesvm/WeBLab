@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<style>
+    form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+</style>
+<html lang="pt-br">
+<body>
+<form accept-charset="UTF-8" autocomplete="off" method="GET">
+    <fieldset>
+        <legend>Cálculo do IMC</legend>
+        <label>Peso</label><br />
+        <input name="peso" type="text" id="peso"/> <br /> 
+        <label>Altura</label><br />
+        <input name="altura" type="text" id="altura"/> <br /> 
+
+        <button onclick="calcula()">Calcular</button>
+    </fieldset>
+</form>
+</body>
+<script>
+    function calcula(){
+        peso = Number(document.getElementById("peso").value);
+        altura = Number(document.getElementById("altura").value);
+        imc = peso / (altura * altura);
+
+        if (imc <= 18.5){
+            classificacao = "abaixo do peso";
+        } else if (imc <= 25) {
+            classificacao = "peso normal";
+        } else if (imc <= 30) {
+            classificacao = "acima do peso";
+        }
+        window.alert(`O seu IMC é ${imc} - ${classificacao}`);
+    }
+</script>
+</html>

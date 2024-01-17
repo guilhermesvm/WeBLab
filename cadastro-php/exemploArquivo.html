@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+
+    <strong><font color="#0000FF">CADASTRO DE PRODUTOS</font></strong> </br> </br>   
+
+    <form name="FormProdutos" method="POST" action="gravaDados.php">
+
+    <table width="10%" border="0">
+        <tr> 
+          <td width="30%"><div align="right"><strong>Código:</strong></div></td>
+          <td width="70%"><input type="text" name="cod" size="25"></td>
+        </tr>
+        
+        <tr> 
+           <td width="30%"><div align="right"><strong>Nome:</strong></div></td>
+           <td width="70%"><input type="text" name="nome" size="25"></td>
+        </tr>
+
+        <tr>
+           <td width="30%"><div align="right"><strong>Valor:</strong></div></td>
+           <td width="70%"><input type="text" name="valor" size="25"></td>
+        </tr>
+
+        <tr> 
+            <td width="30%"><div align="right"><strong>Tipo:</strong></div></td>
+            <td width="70%"> <INPUT TYPE="radio" NAME="tipo" VALUE="Perecivel" CHECKED>Perecível
+                             <INPUT TYPE="radio" NAME="tipo" VALUE="Não-perecível">Não-perecível</td>
+         </tr>
+  
+        <tr> 
+          <td colspan="2"> 
+            <input type="reset" name="btnLimpar" value="Limpar">
+            <input type="submit" name="btnEnviar" value="Enviar">
+           </td>
+        </tr>
+      </table>
+</body>
+</html>

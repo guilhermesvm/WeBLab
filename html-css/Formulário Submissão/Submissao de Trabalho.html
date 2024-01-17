@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-UTF-8">
+  <title>Submissao de Trabalho</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+  <form name="form" method="GET" action="submissao.php" enctype="multipart/form-data">
+    <p align="center">Submissão de Trabalho<br>
+      campos obrigatórios *</p>
+    <div>
+      <fieldset>
+        <legend>Autores:</legend>
+      <label for="autor1">Autor principal *:</label>
+      <input name="autor1" type="text" id="autor1" placeholder="Digite seu nome ..." size="50" maxlength="50">
+      <br>
+      <label for="cpf">CPF *:</label>
+      <input name="cpf" type="text" id="cpf" size="20" maxlength="15">
+      <br>
+      <label for="email">Email: *</label>
+      <input name="email" type="text" id="email" size="50" maxlength="100">
+      <br>
+      <label for="autor2">Autor 2:</label>
+      <input name="autor2" type="text" id="autor2" size="50" maxlength="100">
+      <br>
+      <label for="autor3">Autor 3:</label>
+      <input name="autor3" type="text" id="autor3" size="50" maxlength="100">
+      <br>
+      <label for="autor4">Autor 2:</label>
+      <input name="autor4" type="text" id="autor4" size="50" maxlength="100">
+      <br>
+      <label for="autor5">Autor 2:</label>
+      <input name="autor5" type="text" id="autor5" size="50" maxlength="100">
+      <br>
+      </fieldset>
+      <fieldset>
+        <legend>Dados do trabalho:</legend>
+      <label for="titulo">Título *:</label>
+      <input type="text" name="titulo" size="50" maxlength="150">
+      <br>
+      <label for="area">Área do conhecimento: *:</label>
+      <input type="text" name="area" size="50" maxlength="50">
+      <br>
+      <label for="palavras">Palavras-chave *:</label>
+      <input type="text" name="palavras" size="50" maxlength="100">
+      <br>
+      <label for="modalidade">Modalidade *:</label>
+      <select name="modalidade" size="1">
+        <option value="N" selected="">Selecione uma opção
+        </option>
+        <option value="R">Resumo
+        </option>
+        <option value="C">Completo
+        </option>
+      </select>
+      <br>
+      <label for="tipo">Tipo *:</label>
+      <select name="tipo" size="1" id="tipo">
+        <option value="N" selected="">Selecione uma opção</option>
+        <option value="G">Graduação</option>
+        <option value="P">Pós-graduação</option>
+        <option value="O">Outros</option>
+      </select>
+      <br>
+      <label for="apresentacao">Apresentação:*</label>
+      <select name="apresentacao" size="1">
+        <option value="N" selected="">Selecione uma opção</option>
+        <option value="O">Oral</option>
+        <option value="P">Pôster</option>
+      </select>
+      <br>
+      <label for="arquivo">Arquivo *:</label>
+      <input type="file" name="arquivo" size="40"> (Tamanho máximo 2.0 Mb)
+      <br>
+      <input type="submit" value="Enviar" name="B1">
+      <input type="reset" value="Limpar" name="B2">
+      </fieldset>
+
+    </div>
+  </form>
+
+</body>
+
+</html>

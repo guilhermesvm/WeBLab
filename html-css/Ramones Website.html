@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Ramones - Website CSS </title>
+</head>
+<style>
+* {box-sizing: border-box;}
+
+body{font-family: Franklin Gothic;
+padding: 10px;
+background-color:#f1f1f1;}
+
+.header{padding: 30px;
+text-align: center;
+background-color: white;}
+.header h1{font-size: 50px;}
+
+.topnav{overflow: hidden;
+background-color: #333;}
+
+
+.topnav a{float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;}
+
+.topnav a:hover{background-color: #00FF7F;
+color: black;}
+
+.leftcolumn{float:left;
+width: 75%;}
+
+.rightcolumn{float: left;
+width: 25%;
+background-color: #f1f1f1;
+padding-left: 20px;}
+
+.fakeimg{background-color: #aaa;
+width: 100%;
+padding: 20px;}
+  
+.card{background-color:white;
+padding: 20px;
+margin-top: 20px;}
+
+.row:after{content: "";
+display: table;
+clear: both;}
+
+.footer{padding: 30px;
+text-align: center;
+background-color: white;
+margin-top: 20px;}
+
+@media screen and (max-width: 800px) {
+.left column, .rightcolumn {width: 100%; padding: 0;}}
+
+@media screen and (max-width: 400px) {
+  .topnav a {float: none; width: 100%;}}
+
+</style>
+
+<body>
+<div class="header">
+	<h1>The Ramones </h1>
+	<p> A punk rock band</p>
+</div>
+
+<div class="topnav">
+	<a class="active" href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Discography</a>
+    <a href="#" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Home</h2>
+      <h5>By Guilherme, 11 de abril, 2023</h5>
+      <img src="https://cf.shopee.com.br/file/335c845bead8e75e9e1932ff90d234f5" alt="Ramones Logo" width="30%">
+      <p>The Ramones were an American punk rock band that formed in the New York City neighborhood of Forest Hills, Queens, in 1974. They are often cited as the first true punk rock group. Despite only achieving limited commercial success during their time together, the band is today seen as highly influential.</p>
+      <p> All of the band members adopted pseudonyms ending with the surname "Ramone", although none of them were biologically related; they were inspired by Paul McCartney, who would check into hotels as "Paul Ramon". The Ramones performed 2,263 concerts, touring virtually nonstop for 22 years. In 1996, after a tour with the Lollapalooza music festival, they played a farewell concert in Los Angeles and disbanded. </p>
+    </div>
+    <div class="card">
+      <h2> About Us </h2>
+      <h5> By Guilherme,  11 de abril, 2023</h5>
+      <img src="https://pbs.twimg.com/media/Fl56b_MXwAIyWju?format=jpg&name=900x900" alt="Ramones playing in 1975, New York" width="30%">
+      <p> Ramones performing in New York City, 1975. Photo by Bob Gruen</p>
+      <p> Recognition of the band's importance built over the years. The Ramones ranked number 26 in Rolling Stone magazine's list of the "100 Greatest Artists of All Time" and number 17 in VH1's "100 Greatest Artists of Hard Rock". In 2002, the Ramones were ranked the second-greatest band of all time by Spin, trailing only the Beatles. On March 18, 2002, the original four members and Tommy's replacement on drums, Marky Ramone, were inducted into the Rock and Roll Hall of Fame in their first year of eligibility. In 2011, the group was awarded a Grammy Lifetime Achievement Award. </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+  
+  
+     <div class="card">
+    	<h3> Famous Albums</h3>
+        <img src="https://i.scdn.co/image/ab67616d0000b273d8b51e7394e2c2c1aa6eb0cb" alt="Logo I Wanna be Sedated" width="55%">
+        <img src="https://i.discogs.com/UEEa3hJpM8wfiEeb25KL_mEBzEKMimorQ30gVgpuCQU/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNDU2/MTktMTQ3NDI5NDc0/Ni01NDg1LmpwZWc.jpeg" alt="Logo Animal Boy" width="55%">
+        <img src="https://i.scdn.co/image/ab67616d0000b2736b2e26f5a2c40835f8f0b77b" alt=" Logo Brain Drain" width="55%">
+    </div>
+    
+      <div class="card">
+    	<h2> Contact Us </h2>
+        <p>Here is our number! - 99 9999-9999</p>
+    </div>
+    <div class="card">
+     	<h3> Social Media</h3>
+        <a href="https://www.instagram.com/ramones/" target="_blank">Instagram: @Ramones</a>
+        <p> Twitter: @Ramones </p>
+        <p> Spotify: The Ramones </p>
+    </div>
+  </div>
+</div>
+  
+<div class="footer">
+	<h2> Footer </h2>
+</div>
+</body>
+</html>

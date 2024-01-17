@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Document</title>
+<script>
+    function valida(){
+        if (document.getElementById('nome').value == "") {
+            alert("O nome não foi preenchido!");
+            document.form.nome.focus();
+            return;
+        }
+        else form.submit;
+    }
+</script>
+</head>
+
+<body>
+    <form name="form" method="post" action="questao.php">
+    Nome: <input name="nome" id="nome" type="text" size="10" value="">
+    <input type="button" name="enviar" value="enviar" onClick="valida()">
+    </form>
+    
+</body>
+</html>
